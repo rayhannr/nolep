@@ -90,6 +90,8 @@ model = LogisticRegression()
 model.fit(X_train, y_train)
 score = model.score(X_test, y_test)
 
+prediction = model.predict(X_test)
+
 threshold = 0.5
 words = []
 sentiment = []
